@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaJDBC/JavaJDBC.iml" filepath="$PROJECT_DIR$/JavaJDBC/JavaJDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMaven/JavaMaven.iml" filepath="$PROJECT_DIR$/JavaMaven/JavaMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMysSQL/JavaMysSQL.iml" filepath="$PROJECT_DIR$/JavaMysSQL/JavaMysSQL.iml" />
+    </modules>
+  </component>
+</project>

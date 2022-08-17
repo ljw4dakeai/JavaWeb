@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/10.TRANSACTION-事务.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/3.CONSTRAINT-约束多表_多对多.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/4.UNION_JOIN_SELECT-多表查询.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/5.INNER_JOIN-内连接.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/6.OUTER_JOIN-外连接.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/7.SON_SELECT-子查询.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/8.SON_SELECT-虚拟表.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/sql/chapter02mysalhigh/STUDY/9.UNION_JOIN_SELECT-多表联查.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/10.TRANSACTION-事务.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/3.CONSTRAINT-约束多表_多对多.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/4.UNION_JOIN_SELECT-多表查询.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/5.INNER_JOIN-内连接.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/6.OUTER_JOIN-外连接.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/7.SON_SELECT-子查询.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/8.SON_SELECT-虚拟表.SQL" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/JavaMysSQL/src/com/ljw4dakeai/chapter02mysalhigh/STUDY/9.UNION_JOIN_SELECT-多表联查.SQL" charset="GBK" />
+  </component>
+</project>

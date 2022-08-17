@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="druid-1.1.12">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JavaJDBC/lib/druid-1.1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JavaJDBC/lib/junit-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JavaJDBC/lib/mysql-connector-java-5.1.48.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
