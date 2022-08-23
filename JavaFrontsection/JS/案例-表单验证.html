@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <link href="css/register.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-div">
+    <div class="reg-content">
+        <h1>欢迎注册</h1>
+        <span>已有帐号？</span> <a href="#">登录</a>
+    </div>
+    <form id="reg-form" action="19-DOM-事件概念和事件绑定-方式二.html" method="post">
+
+        <table>
+
+            <tr>
+                <td>用户名</td>
+                <td class="inputs">
+                    <input name="username" type="text" id="username" placeholder="请输入6~12位字母、数字、下划线">
+                    <br>
+                    <span id="username_err" class="err_msg" style="display: none">用户名不符合要求</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>密码</td>
+                <td class="inputs">
+                    <input name="password" type="password" id="password" placeholder="请输入6~12位字母、数字、下划线">
+                    <br>
+                    <span id="password_err" class="err_msg" style="display: none">密码不符合要求</span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>手机号</td>
+                <td class="inputs"><input name="tel" type="text" id="tel" placeholder="请输入12位手机号">
+                    <br>
+                    <span id="tel_err" class="err_msg" style="display: none">手机号不符合要求</span>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="buttons">
+            <input value="注 册" type="submit" id="reg_btn">
+        </div>
+        <br class="clear">
+    </form>
+
+</div>
+
+
+<script>
+    //需求1：用户名、密码、手机号三个输入框失去焦点之后分别校验
+    //-------------校验用户名输入框---------------------
+    //-------------校验密码输入框---------------------
+    //-------------校验手机号输入框---------------------
+    function check(input) {
+        let value = document.querySelector(`#${input}`).value.trim()
+        let regex
+        if (input !== "tel") {
+            regex = /^\w{6,12}$/
+        } else {
+            regex = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/
+        }
+        return regex.test(value)
+    }
+
+    function onblurIf(input) {
+        document.querySelector(`#${input}`).onblur = function () {
+            let flag = check(input)
+            if (flag) {
+                document.querySelector(`#${input}_err`).style.display = 'none'
+            } else {
+                document.querySelector(`#${input}_err`).style.display = ''
+            }
+        }
+    }
+
+    onblurIf("username")
+    onblurIf("password")
+    onblurIf("tel")
+
+
+    //需求2：点击注册按钮之后，校验用户名、密码、手机号三个输入框数据是否合法，如果不合法就阻止提交。
+    document.querySelector("#reg-form").onsubmit = function () {
+        if (check("username") && check("password") && check("tel") === false) {
+            console.log("输入有误请重新输入后再提交")
+            return false
+        } else {
+            return true
+        }
+    }
+</script>
+</body>
+</html>

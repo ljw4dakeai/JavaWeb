@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用对象-RegExp正则对象</title>
+</head>
+<body>
+    <script>
+        //需求1：校验用户名，要求：6~12位字母、数字、下划线
+        const userReg = /^[a-zA-Z][a-zA-Z0-9_]{6,12}$/
+
+        const  emailReg = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/
+
+        const phoneNumReg = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/
+
+        console.log(userReg.test("ljw4dakeai"));
+        //需求2：校验邮箱
+        console.log(emailReg.test("2631247954@qq.com"));
+
+        //需求3：校验手机号
+        console.log(phoneNumReg.test('13197151400'));
+    </script>
+</body>
+</html>

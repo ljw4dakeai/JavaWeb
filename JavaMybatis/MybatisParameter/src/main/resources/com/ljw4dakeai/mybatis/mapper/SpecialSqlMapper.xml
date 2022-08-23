@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.ljw4dakeai.mybatis.mapper.SpecialSqlMapper">
+
+    <!--List<User> getUserByLike(@Param("likeString") String likeString);-->
+    <select id="getUserByLike" resultType="User">
+        <!--
+            select * from tb_user where username like '%${likeString}%'
+                解析后的SQL   select * from tb_user where username like '%%a%%'
+            select * from tb_user where username like  concat('%', #{likeString,jdbcType=VARCHAR},'%')
+                解析后的SQL   select * from tb_user where username like concat('%', ?,'%')
+        -->
+    <!--@ignoreSql-->
+        select * from tb_user where  username like "%"#{likeString}"%"
+            <!--解析后的SQL   select * from tb_user where username like "%"?"%"-->
+    </select>
+
+    <!--int deleteMoreUserById();-->
+    <delete id="deleteMoreUserById">
+     <!--@ignoreSql-->
+        delete from tb_user
+        where id in (${ids})
+    </delete>
+
+    <!--List<User> selectUserByTableName(@Param("tableName") String tableName);-->
+    <select id="selectUserByTableName" resultType="User">
+     <!--@ignoreSql-->
+        select * from ${tableName};
+    </select>
+
+
+    <!--int insertUserReturnAutoIncrementId(User user);-->
+    <insert id="insertUserReturnAutoIncrementId" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_user
+        values (null, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{addr,jdbcType=VARCHAR})
+    </insert>
+
+</mapper>

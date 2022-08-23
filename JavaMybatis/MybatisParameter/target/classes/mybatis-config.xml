@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--
+        mybatis 中的核心配置标签, 必须按顺序配置
+        顺序是
+        (properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,
+        reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)".
+    -->
+
+    <properties resource="jdbc.properties"/>
+
+    <settings>
+        <!--全局驼峰匹配开启-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--开启延迟加载, 节省资源-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!-- 别名 -->
+    <typeAliases>
+        <package name="com.ljw4dakeai.mybatis.pojo"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!--数据库连接信息-->
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--映射文件-->
+    <mappers>
+        <package name="com.ljw4dakeai.mybatis.mapper"/>
+    </mappers>
+
+</configuration>

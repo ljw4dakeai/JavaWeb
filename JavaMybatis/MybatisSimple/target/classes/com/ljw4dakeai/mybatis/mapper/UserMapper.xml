@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--        命名空间和全类名一致, id 和方法名一致-->
+<mapper namespace="com.ljw4dakeai.mybatis.mapper.UserMapper">
+    <insert id="insertUser">
+        insert into mybatis.tb_user
+        values (NULL, 'admin', 520000, '男', '武汉')
+    </insert>
+
+    <delete id="deleteUser">
+        delete
+        from mybatis.tb_user
+        where mybatis.tb_user.id = 7
+    </delete>
+    <update id="updateUser">
+        update mybatis.tb_user
+        set mybatis.tb_user.username = '邹家豪',
+            mybatis.tb_user.password = '10086',
+            mybatis.tb_user.password = 10086,
+            tb_user.addr             = '湖北武汉'
+        where mybatis.tb_user.id = 7;
+    </update>
+    <!--
+        类型别名
+          <select id="selectUser" resultType="User">
+          <select id="selectUser" resultType="com.ljw4dakeai.mybatis.pojo.User">
+    -->
+    <select id="selectUser" resultType="User">
+        select *
+        from mybatis.tb_user
+    </select>
+</mapper>

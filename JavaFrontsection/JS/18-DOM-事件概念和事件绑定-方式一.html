@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM-事件概念和事件绑定</title>
+</head>
+<body>
+
+    <img id="imgId" src="img/off.gif" ><br>
+    <input type="button" value="开灯" onclick = "on()">
+    <input type="button" value="关灯" onclick="off()">
+<!--
+    <img id="imgId" src="img/off.gif" ><br>
+    <input type="button" value="开灯" id = "onBut">
+    <input type="button" value="关灯" id="offBut">
+-->
+    <script>
+        function on() {
+            document.querySelector("#imgId").src = "img/on.gif"
+        }
+        function off() {
+            document.querySelector("#imgId").src = "img/off.gif"
+        }
+        /*
+            方式1：通过 HTML标签中的事件属性进行绑定
+            步骤：
+                1 在标签上添加事件属性，属性值是要执行的函数
+                2 定义事件绑定的函数
+        */
+        //需求：点击“开灯”和“关灯”按钮，实现图片切换展示开灯和关灯的效果。
+/*        document.querySelector("#offBut").onclick = function () {
+            document.querySelector("#imgId").src = "img/off.gif"
+        }
+        document.querySelector("#onBut").onclick = function () {
+            document.querySelector("#imgId").src = "img/on.gif"
+        }*/
+
+
+
+    </script>
+</body>
+</html>

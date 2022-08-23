@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ljw4dakeai.mybatis.mapper.UserMapper">
+    <!--  User getUserByUserName(String username);    -->
+    <select id="getUserByUserName" resultType="User">
+        select * from tb_user
+        where username = #{username,jdbcType=VARCHAR} -- 和传入过来的参数名没有关系, 所以参数名可以任意设置
+    </select>
+
+    <!--
+        多参数的几种方式
+        where username = #{param1,jdbcType=VARCHAR} and password = #{param2,jdbcType=VARCHAR}
+        where username = #{arg0,jdbcType=VARCHAR} and password = #{arg1,jdbcType=VARCHAR}
+    -->
+    <!-- User checkLogin(String username, String password);   -->
+    <select id="checkLogin" resultType="User">
+        select * from mybatis.tb_user
+        where username = #{param1,jdbcType=VARCHAR} and password = #{param2,jdbcType=VARCHAR}
+    </select>
+
+    <!-- User checkLoginByMap(Map<String, Object> map); -->
+    <select id="checkLoginByMap" resultType="User">
+        select * from mybatis.tb_user
+        where username = #{username,jdbcType=VARCHAR} and password = #{password,jdbcType=VARCHAR}
+    </select>
+
+    <!-- int insertUser(User user);-->
+    <insert id="insertUser">
+        insert into mybatis.tb_user
+        values (null, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{addr,jdbcType=VARCHAR})
+    </insert>
+
+    <!--  User checkLoginByParamAnnotation(@Param("username") String username, @Param("password") String password);-->
+    <select id="checkLoginByParamAnnotation" resultType="User">
+        select * from mybatis.tb_user
+        where username = #{username,jdbcType=VARCHAR} and password = #{password,jdbcType=VARCHAR}
+    </select>
+
+</mapper>

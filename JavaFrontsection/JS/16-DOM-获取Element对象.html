@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM-获取Element对象</title>
+</head>
+<body>
+    <div id="div1">黑马程序员</div>
+    <div class="cls">传智播客</div>
+    <div class="cls">传智教育</div>
+
+    <script>
+        /*
+            获取：使用Document对象的方法来获取
+                getElementById：根据id属性值获取，返回一个Element对象
+                getElementsByTagName：根据标签名称获取，返回Element对象数组
+                getElementsByName：根据name属性值获取，返回Element对象数组
+                getElementsByClassName：根据class属性值获取，返回Element对象数组
+            获取：使用Document对象的方法来获取【ES6提供的新方法】
+                document.querySelector(“css选择器”)：根据css选择器获取一个Element对象
+                document.querySelectorAll(“css选择器”) ：根据css选择器获取一个Element对象数组
+         */
+        //演示：getElementById：根据id属性值获取，返回一个Element对象
+        let elementById = document.getElementById("div1");
+        console.log(elementById);
+
+        //演示：document.querySelector(“css选择器”)
+        let element = document.querySelector("#div1");
+        console.log(element);
+        //演示：document.querySelectorAll(“css选择器”)
+        let elementNodeListOf = document.querySelectorAll(".cls");
+        elementNodeListOf.forEach(val => console.log(val))
+    </script>
+</body>
+</html>

@@ -17,6 +17,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/JavaMaven/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybits/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybatis-Parameter/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybatis-Parameter_ResultMap/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybatis-Parameter_ResultMap_DynamicSQL/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybatis/MybatisDynamicSQL/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybatis/MybatisParameter/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMybatis/MybatisResultMap/pom.xml" />
       </list>
     </option>
   </component>

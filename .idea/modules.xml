@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaFrontsection/CSS/CSS.iml" filepath="$PROJECT_DIR$/JavaFrontsection/CSS/CSS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrontsection/FrontsectionTemple/FrontsectionTemple.iml" filepath="$PROJECT_DIR$/JavaFrontsection/FrontsectionTemple/FrontsectionTemple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrontsection/HTML/HTML.iml" filepath="$PROJECT_DIR$/JavaFrontsection/HTML/HTML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrontsection/JS/JS.iml" filepath="$PROJECT_DIR$/JavaFrontsection/JS/JS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrontsection/JavaFrontsection.iml" filepath="$PROJECT_DIR$/JavaFrontsection/JavaFrontsection.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaJDBC/JavaJDBC.iml" filepath="$PROJECT_DIR$/JavaJDBC/JavaJDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaMaven/JavaMaven.iml" filepath="$PROJECT_DIR$/JavaMaven/JavaMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMybatis/JavaMybatis.iml" filepath="$PROJECT_DIR$/JavaMybatis/JavaMybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaMysSQL/JavaMysSQL.iml" filepath="$PROJECT_DIR$/JavaMysSQL/JavaMysSQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMybatis/MybatisDynamicSQL/MybatisDynamicSQL.iml" filepath="$PROJECT_DIR$/JavaMybatis/MybatisDynamicSQL/MybatisDynamicSQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMybatis/MybatisParameter/MybatisParameter.iml" filepath="$PROJECT_DIR$/JavaMybatis/MybatisParameter/MybatisParameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMybatis/MybatisPractise/MybatisPractise.iml" filepath="$PROJECT_DIR$/JavaMybatis/MybatisPractise/MybatisPractise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMybatis/MybatisResultMap/MybatisResultMap.iml" filepath="$PROJECT_DIR$/JavaMybatis/MybatisResultMap/MybatisResultMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMybatis/MybatisSimple/MybatisSimple.iml" filepath="$PROJECT_DIR$/JavaMybatis/MybatisSimple/MybatisSimple.iml" />
     </modules>
   </component>
 </project>

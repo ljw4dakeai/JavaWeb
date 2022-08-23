@@ -6,11 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="MybatisSimple" />
+        <module name="MybatisDynamicSQL" />
+        <module name="MybatisParameter" />
         <module name="JavaMaven" />
+        <module name="MybatisPractise" />
+        <module name="MybatisResultMap" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JavaMaven" target="1.8" />
+      <module name="JavaMybatis" target="1.8" />
+      <module name="JavaMybatis-Simple" target="1.8" />
+      <module name="JavaMybits" target="1.8" />
+      <module name="MybatisDynamicSQL" target="1.8" />
+      <module name="MybatisParameter" target="1.8" />
+      <module name="MybatisPractise" target="1.8" />
+      <module name="MybatisResultMap" target="1.8" />
+      <module name="MybatisSimple" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

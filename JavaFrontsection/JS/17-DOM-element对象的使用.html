@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM-element对象的使用</title>
+</head>
+<body>
+    <h2 id="msg">传智播客</h2>
+    <img id="imgId" src="img/off.gif" ><br>
+	<input type="text" id="username" name="username" value="黑马程序员"><br>
+
+    <input type="checkbox" name="hobby" value="sing" class="cls">唱
+    <input type="checkbox" name="hobby" value="dance" class="cls">跳
+    <input type="checkbox" name="hobby" value="rap" class="cls">rap
+    <input type="checkbox" name="hobby" value="basketball" class="cls">篮球
+
+    <script>
+        //需求1：将传智播客修改成"你好，黑马程序员！"，如果是追加呢？
+        document.querySelector('#msg').innerHTML = "你好，黑马程序员！"
+        // document.querySelector('#msg').innerHTML += "你好，黑马程序员！"
+        // document.querySelector('#msg').innerHTML += "<font color='#ffc0cb' size='4'>你好，黑马程序员！</font>"
+        //需求2：实现开灯效果
+        document.querySelector('#imgId').src = "img/on.gif"
+
+		//需求3：获取用户名输入框中的内容
+        let value = document.querySelector('#username').value;
+        console.log(value)
+        //需求4：将h2标签的内容字体设置成红色
+        document.querySelector('#msg').style.fontFamily = "Aa少女微醺蜜桃酒"
+        document.querySelector('#msg').style.color = "pink"
+
+        //需求5：将上述爱好全部选中
+        document.querySelectorAll('.cls').forEach(val => val.checked = true)
+    </script>
+</body>
+</html>

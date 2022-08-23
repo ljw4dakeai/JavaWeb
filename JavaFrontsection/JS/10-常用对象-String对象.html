@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用对象-String对象</title>
+</head>
+<body>
+    <script>
+        //1 定义字符串
+        string1 = "你好 世界!"
+        string2 ="你好 世界 hello word"
+        string3 = `你好世界 hello JS`
+        //2 使用字符串
+        //length属性获取字符串长度
+        console.log(string1.length);
+        //思考：js中能够使用equals方法判断两个字符串是否相等?
+        string4 = "你好 世界!"
+        // string1.equals(string4) // string1.equals is not a function
+        console.log(string1 === string4);
+
+        console.log(`${string2}`)
+
+        let date = new Date();
+        console.log(`当前日期是 : ${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} + 周${date.getDay()}`)
+    </script>
+</body>
+</html>

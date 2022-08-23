@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用对象-自定义对象</title>
+</head>
+<body>
+<script>
+    class Student {
+        name = "";
+        age = 0;
+
+
+        constructor(name, age) {
+            this._name = name;
+            this._age = age;
+        }
+
+        eat (food) {
+            return this.name + " eat " + food
+        }
+
+        study (className) {
+            return this.name + " study " + className
+        }
+
+
+        get name() {
+            return this._name;
+        }
+
+        set name(value) {
+            this._name = value;
+        }
+
+        get age() {
+            return this._age;
+        }
+
+        set age(value) {
+            this._age = value;
+        }
+    }
+
+    let student_ = new Student();
+
+    student_.name = "邹家豪"
+    student_.age = 21
+
+    console.log(student_.study("JS"));
+    console.log(student_.eat("大骨头"));
+
+    /*
+        let 对象名称 = {
+            属性名称1:属性值1,
+            属性名称2:属性值2,
+            ...
+            函数名称:function (形参列表){},
+            函数名称 (形参列表){}
+            ...
+        };
+
+     */
+    //1 定义对象，有name和age属性，有eat()方法和study()方法
+    let student = {
+        name: "zoujiahao",
+        age: 21,
+
+        eat: function (food) {
+            return this.name + " eat " + food
+        },
+
+        study: function (className) {
+            return this.name + " study " + className
+        }
+    }
+    //2 使用对象
+    console.log(student.study("JS"));
+    console.log(student.eat("大骨头"));
+
+    //2.1 访问属性
+    console.log(student.name);
+    //2.2 访问方法
+    console.log(student.eat("大骨头"));
+
+    //js对象支持动态扩展属性,如果没有这个属性, 就创建该属性并且赋值
+    student.address = "武汉"
+
+    console.log(student.address);
+</script>
+</body>
+</html>

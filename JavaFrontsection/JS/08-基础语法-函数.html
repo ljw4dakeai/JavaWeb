@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础语法-函数</title>
+</head>
+<body>
+<script>
+    /*
+        函数的两种定义方式
+        方式1：普通函数：
+            定义：
+                function 函数名(变量名1,变量名2,...){
+                    //方法体代码
+                    //如果要返回结果，直接使用return关键字即可
+                }
+            调用：
+                函数名(参数值1,参数值2,...);  //调用返回值方法
+                let 变量名=函数名(参数值1,参数值2,...);  //调用有返回值方法
+     */
+    //需求：定义方法，计算给定的两个值的和。
+    function sum(a, b) {
+        return a + b
+    }
+
+    console.log(sum(10, 20), typeof  sum);
+
+
+    /*
+        函数的两种定义方式
+        方式2：匿名函数，类似于java中的匿名内部类的书写。
+            定义：变量名就是函数名
+                let 变量名=function (变量名1,变量名2,...){
+                    //方法体代码
+                    //如果要返回结果，直接使用return关键字即可
+                }
+            调用：
+                变量名(参数值1,参数值2,...);  //调用返回值方法
+                let 变量名=变量名(参数值1,参数值2,...);  //调用有返回值方法
+     */
+    //需求：定义方法，计算给定的两个值的和。
+    let sum_ = function (a, b) {
+        return a + b;
+    }
+
+    console.log(sum_(10, 30) ,typeof sum_);
+
+
+    function numberSum(m, n){
+        let sum= 0
+        for(let i = m; m <= n ; m++){
+            sum += m
+        }
+        return sum
+    }
+
+    document.write(numberSum(10, 20))
+
+    document.write("\n")
+
+    let  numberSum_ = function(m, n){
+        let sum= 0
+        for(let i = m; m <= n ; m++){
+            sum += m
+        }
+        return sum
+    }
+    document.write(numberSum_(30, 40))
+
+
+
+</script>
+</body>
+</html>

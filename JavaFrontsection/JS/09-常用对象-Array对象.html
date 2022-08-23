@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用对象-Arrays对象</title>
+</head>
+<body>
+    <script>
+        /*
+            1 定义数组
+            2 遍历数组【重要】
+         */
+        //1 定义数组
+        let array = ["你好", 3.1415926, true]
+        let arrayLose = Array(1, 22, true)
+        //2 遍历数组
+        //2.1 遍历方式1：fori
+        for (let i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+
+        /*
+         2.2 遍历方式2：forof 类似于java中增强for循环
+            语法：
+                for (let 变量名 of 数组名称){
+
+                }
+         */
+        for (let arrayElement of array) {
+            console.log(arrayElement);
+        }
+
+        array.forEach(console.log)
+    </script>
+</body>
+</html>

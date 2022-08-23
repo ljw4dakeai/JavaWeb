@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form label 表单标签</title>
+</head>
+<body>
+
+<!--
+    form 定义表单
+        action = "" : 定义表单提交的地址, 将来学了服务器, 就填写服务器的地址.
+            效果 : 往哪里提交,页面就跳转到哪里
+        method="" : 提交方式 get 和 post
+
+        get 和 post 方式的区别
+            1.get方式提交的参数在地址栏的url上,post提交的数据在参数的请求体中(开发者模式 network中查看)
+            2.get方式提交参数相对不安全, post提交方式相对安全
+            3.get方式提交的参数大小有限制, post方式提交的参数没有大小限制!
+
+
+    各种类型type :
+        text : 文本框
+        password : 密码
+        radio : 单选
+        checkbox : 多选
+
+    name 属性
+           1.有那么属性才会提交表单
+           2.对于单选按钮和复选框 name属性一致, 视为一组, 一组有互斥效果
+   value属性
+            1.定义表单项的默认值
+            2.对于单选按钮和复选框而言, 必须有value 值, 用于提交给服务器的值
+
+    checked属性
+            默认值,默认选项
+    placeholder属性
+            提示语
+
+-->
+
+<!--
+    select
+        option 选择标签中的数据项
+            selected 默认选中
+-->
+<form action="https://www.baidu.com" method="post">
+    <label for="username">
+        账号:<input id="username" type="text" name="username" placeholder="请输入账号/手机号"><br>
+    </label>
+    <label for="password">
+        密码:<input id="password" type="password" name="password" placeholder="请输入密码"><br>
+    </label>
+    <!--    单选-->
+    <label>
+        性别:
+        <input type="radio" name="request" value="boy">男
+        <input type="radio" name="request" value="girl">女<br>
+    </label>
+    <!--    多选-->
+    <label>
+        爱好:
+        <input type="checkbox" name="manyRequest" value="sing">唱
+        <input type="checkbox" name="manyRequest" value="up">跳
+        <input type="checkbox" name="manyRequest" value="rap">rap
+        <input type="checkbox" name="manyRequest" value="basketball">打篮球<br>
+    </label>
+    <label>
+        请选择城市:
+        <select name=" city" >
+            <option value="select" selected>-请选择-</option>
+            <option value="sh">上海</option>
+            <option value="bg">北京</option>
+            <option value="gd">广东</option>
+            <option value="wh">武汉</option>
+        </select><br>
+    </label>
+
+    <label for="desc">
+        描述:
+        <textarea id="desc" rows="5" cols="50">
+        </textarea>
+    </label>
+    <label>
+        <!--    文件-->
+        头像:<input type="file"><br>
+    </label>
+    <label>
+        <!--    邮箱-->
+        邮箱:<input type="email"><br>
+    </label>
+    <label>
+        <!--        日历-->
+        生日 : <input type="date"><br>
+    </label>
+    <input type="hidden" value="隐藏">
+    <input type="submit" value="注册">
+    <input type="button" value="nothing">
+    <input type="reset" value="重置"><br>
+</form>
+</body>
+</html>

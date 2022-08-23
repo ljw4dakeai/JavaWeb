@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.ljw4dakeai.mybatis.mapper.DishMapper">
+
+    <!--    List<Dish> selectAll();-->
+    <select id="selectAll" resultType="Dish">
+        select *
+        from tb_dish
+    </select>
+
+    <!--Dish selectByDishId(@Param("id") Integer id);-->
+    <select id="selectByDishId" resultType="Dish">
+        select *
+        from tb_dish
+        where id= #{id,jdbcType=INTEGER}
+    </select>
+
+    <!--        Integer updateByDishId(Dish dish);-->
+    <update id="updateByDishId" parameterType="Dish">
+        update tb_dish
+        set name =#{dish.name,jdbcType=VARCHAR}, price = #{dish.price,jdbcType=DOUBLE},
+        code =#{dish.code,jdbcType=VARCHAR}, image =#{dish.image,jdbcType=VARCHAR},
+        description = #{dish.description,jdbcType=VARCHAR}, status = #{dish.status,jdbcType=INTEGER}
+        where id =#{id,jdbcType=INTEGER}
+    </update>
+
+    <!--    Integer deleteByDishId(@Param("id") Integer id);-->
+    <delete id="deleteByDishId">
+        delete from tb_dish
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <!--    Integer insertByDishId(Dish dish);-->
+  <insert id="insertByDishId" parameterType="Dish">
+        insert into tb_dish
+        values (id = #{id,jdbcType=INTEGER},
+        #{dish.name,jdbcType=VARCHAR},
+        #{dish.price,jdbcType=DOUBLE},
+        #{dish.code,jdbcType=VARCHAR},
+        #{dish.image,jdbcType=VARCHAR},
+        #{dish.description,jdbcType=VARCHAR},
+        #{dish.status,jdbcType=INTEGER}
+        )
+    </insert>
+
+    <!--    List<Dish> selectByCondition(@Param("code") Integer code, @Param("name") String  name);-->
+    <select id="selectByCondition" resultType="Dish">
+        <!--@ignoreSql-->
+        select * from tb_dish
+        <where>
+            <if test="code != null">
+                code = #{code,jdbcType=INTEGER}
+            </if>
+            <if test="name != null and name != ''">
+                and name like "%"#{name,jdbcType=VARCHAR}"%"
+            </if>
+        </where>
+    </select>
+
+    <!--    Integer deleteByDishIds(String[] ids);-->
+    <delete id="deleteByDishIds" parameterType="java.lang.Integer">
+        delete from tb_dish
+        <where>
+            id in
+               <foreach collection="array" index="index" item="item" open="(" separator="," close=")">
+                 #{item}
+               </foreach>
+        </where>
+    </delete>
+
+</mapper>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.ljw4dakeai.mybatis.mapper.DynamicSQLMapper">
+    <!--动态SQL IF标签的学习    -->
+    <!--
+    List<Employee> getEmpByCondition(
+                @Param("empId") Integer empId,
+                @Param("empName") String empName,
+                @Param("gender") String gender,
+                @Param("age") Integer age
+        );
+    -->
+    <select id="getEmpByCondition" resultType="Employee">
+        select *
+        from tb_emp
+        <where>
+            <if test="empName != null and empName != ''">
+                emp_name = #{empName,jdbcType=VARCHAR}
+            </if>
+            <if test="gender != null and gender != ''">
+                and gender = #{gender,jdbcType=VARCHAR}
+            </if>
+            <if test="age != null">
+                and age =#{age,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+
+
+
+</mapper>

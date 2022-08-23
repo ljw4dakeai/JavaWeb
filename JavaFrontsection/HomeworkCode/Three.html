@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册详情</title>
+</head>
+<body>
+<font size="2" color="black">注册详情</font>
+<hr>
+<label for="username">
+    姓名:<input id="username" type="text" name="username" placeholder="请输入姓名">
+</label><br>
+<label for="password">
+    密码:<input id="password" type="password" name="password" placeholder="请输入密码">
+</label><br>
+<label for="phoneNumber">
+    手机:<input id="phoneNumber" type="text" name="phoneNumber" placeholder="请输入手机号">
+</label><br>
+<label for="email">
+    邮箱:<input id="email" type="email" name="email" placeholder="请输入邮箱号">
+</label><br>
+<hr>
+<label>
+    性别:
+    <input type="radio" name="gender" value="boy">男
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="gender" value="girl"> 女
+</label><br>
+<label>
+    爱好:
+    <input type="checkbox" name="like" value="movie">电影
+    <input type="checkbox" name="like" value="music">音乐
+    <input type="checkbox" name="like" value="game">游戏
+</label><br>
+<label>
+    出生日期:
+    <input id="start_time" type="date" name="birthday">
+</label><br>
+<label>
+    所在城市:
+    <select name="city">
+        <option value="select" selected>请输入你所在的城市</option>
+        <option value="bg">北京</option>
+        <option value="sh">上海</option>
+        <option value="gz">广州</option>
+        <option value="sz">深圳</option>
+        <option value="wh">武汉</option>
+        <option value="hz">杭州</option>
+    </select>
+</label><br>
+<label for="desc">
+    个性签名:
+    <textarea id="desc" rows="3" cols=17 placeholder="请写下你的与众不同~"></textarea>
+</label><br>
+<hr>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</body>
+<script type="text/javascript">
+  const start = document.getElementById("start_time");
+  const date = new Date();
+  let month_t = date.getMonth().toString();
+  if (date.getMonth() + 1 < 10)
+    month_t = '0' + (date.getMonth() + 1);
+
+  let day_t = date.getDate().toString();
+  if (date.getDate() < 10)
+    day_t = '0' + (date.getDate() + 1)
+
+  const dateString = date.getFullYear() + "-" + (month_t) + "-" + day_t;
+  start.value = dateString;
+</script>
