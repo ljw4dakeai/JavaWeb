@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ServLetMybatisLoginRegest:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/ServLetMybatisLoginRegest/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ServLetMybatisLoginRegest</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ServLetMybatisLoginRegest-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ServLetMybatisLoginRegest:war exploded" />
+    </root>
+  </artifact>
+</component>

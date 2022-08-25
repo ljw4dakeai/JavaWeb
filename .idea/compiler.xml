@@ -6,12 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Response" />
+        <module name="ServLetMybatisLoginRegister" />
         <module name="MybatisSimple" />
-        <module name="MybatisDynamicSQL" />
-        <module name="MybatisParameter" />
         <module name="JavaMaven" />
         <module name="MybatisPractise" />
         <module name="MybatisResultMap" />
+        <module name="TomcatSimple" />
+        <module name="Request" />
+        <module name="MybatisDynamicSQL" />
+        <module name="MybatisParameter" />
+        <module name="ServLetMybatisSimple" />
+        <module name="ServletSimple" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,11 +25,18 @@
       <module name="JavaMybatis" target="1.8" />
       <module name="JavaMybatis-Simple" target="1.8" />
       <module name="JavaMybits" target="1.8" />
+      <module name="JavaTomcat" target="1.8" />
       <module name="MybatisDynamicSQL" target="1.8" />
       <module name="MybatisParameter" target="1.8" />
       <module name="MybatisPractise" target="1.8" />
       <module name="MybatisResultMap" target="1.8" />
       <module name="MybatisSimple" target="1.8" />
+      <module name="Request" target="1.8" />
+      <module name="Response" target="1.8" />
+      <module name="ServLetMybatisLoginRegister" target="1.8" />
+      <module name="ServLetMybatisSimple" target="1.8" />
+      <module name="ServletSimple" target="1.8" />
+      <module name="TomcatSimple" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

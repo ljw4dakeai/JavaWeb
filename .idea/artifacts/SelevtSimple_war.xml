@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SelevtSimple:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/SelevtSimple/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SelevtSimple</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SelevtSimple-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SelevtSimple:war exploded" />
+    </root>
+  </artifact>
+</component>

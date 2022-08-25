@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TomcatSimple:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/TomcatSimple/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>TomcatSimple</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="TomcatSimple-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="TomcatSimple:war exploded" />
+    </root>
+  </artifact>
+</component>

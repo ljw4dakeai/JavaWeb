@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [24/Aug/2022:20:02:32 +0800] "GET /ServLetMybatisSimple HTTP/1.1" 302 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [24/Aug/2022:20:02:33 +0800] "GET /ServLetMybatisSimple/ HTTP/1.1" 200 402 http-bio-8080-exec-3 22
+0:0:0:0:0:0:0:1 - - [24/Aug/2022:20:02:35 +0800] "POST /ServLetMybatisSimple/selectAllServlet HTTP/1.1" 200 - http-bio-8080-exec-4 927

@@ -1,0 +1,6 @@
+com\ljw4dakeai\request\Test02RequestHeader.class
+com\ljw4dakeai\request\Test03RequestParameters.class
+com\ljw4dakeai\request\Test04RequestParametersSetCharacter.class
+com\ljw4dakeai\request\Test06RequestForwardSend.class
+com\ljw4dakeai\request\Test05RequestForwardReceive.class
+com\ljw4dakeai\request\Test01RequestGet.class

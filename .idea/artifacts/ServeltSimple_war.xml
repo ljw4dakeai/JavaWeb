@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ServeltSimple:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/ServeltSimple/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ServeltSimple</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ServletSimple-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ServeltSimple:war exploded" />
+    </root>
+  </artifact>
+</component>

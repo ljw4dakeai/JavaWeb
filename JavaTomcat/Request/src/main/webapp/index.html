@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交</title>
+</head>
+<body>
+
+    <form action="/Request/testRequestForwardSend" method="post">
+        <label for="username">
+            账号:<input id="username" type="text" name="username" placeholder="请输入账号/手机号"><br>
+        </label>
+        <label for="password">
+            密码:<input id="password" type="password" name="password" placeholder="请输入密码"><br>
+        </label>
+        <!--    单选-->
+        <label>
+            性别:
+            <input type="radio" name="sex" value="boy">男
+            <input type="radio" name="sex" value="girl">女<br>
+        </label>
+        <!--    多选-->
+        <label>
+            爱好:
+            <input type="checkbox" name="hobby" value="sing">唱
+            <input type="checkbox" name="hobby" value="up">跳
+            <input type="checkbox" name="hobby" value="rap">rap
+            <input type="checkbox" name="hobby" value="basketball">打篮球<br>
+        </label>
+        <label>
+            请选择城市:
+            <select name=" city" >
+                <option value="select" selected>-请选择-</option>
+                <option value="sh">上海</option>
+                <option value="bg">北京</option>
+                <option value="gd">广东</option>
+                <option value="wh">武汉</option>
+            </select><br>
+        </label>
+
+        <label for="desc">
+            描述:
+            <textarea id="desc" name="desc" rows="5" cols="50">
+            </textarea>
+        </label>
+        <label>
+            <!--    文件-->
+            头像:<input type="file" name="img"><br>
+        </label>
+        <label>
+            <!--    邮箱-->
+            邮箱:<input type="email" name="email"><br>
+        </label>
+        <label>
+            <!--        日历-->
+            生日 : <input type="date" name="data"><br>
+        </label>
+        <input type="hidden" value="隐藏">
+        <input type="submit" value="注册">
+        <input type="button" value="nothing">
+        <input type="reset" value="重置"><br>
+    </form>
+
+</body>
+</html>
