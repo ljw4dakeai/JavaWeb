@@ -53,7 +53,7 @@ public class MybatisParameterTest {
     public void testInsertUser(){
         SqlSession autoCommitSqlSession = SqlSessionUtils.getAutoCommitSqlSession();
         UserMapper mapper = autoCommitSqlSession.getMapper(UserMapper.class);
-//        int result = mapper.insertUser(new User(null, "邹家豪", "520000", "男", "湖北武汉"));
+//        int result = com.ljw4dakeai.com.ljw4dakeai.mapper.insertUser(new User(null, "邹家豪", "520000", "男", "湖北武汉"));
         int result = mapper.insertUser(new User(null, "admin", "123456", "男", "襄阳"));
         System.out.println("结果 : " + result);
         autoCommitSqlSession.close();

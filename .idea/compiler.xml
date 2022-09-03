@@ -6,26 +6,56 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Response" />
-        <module name="ServLetMybatisLoginRegister" />
-        <module name="MybatisSimple" />
         <module name="JavaMaven" />
-        <module name="MybatisPractise" />
-        <module name="MybatisResultMap" />
+        <module name="Listener" />
         <module name="TomcatSimple" />
-        <module name="Request" />
-        <module name="MybatisDynamicSQL" />
-        <module name="MybatisParameter" />
+        <module name="JSON" />
+        <module name="BrandVueElement" />
         <module name="ServLetMybatisSimple" />
         <module name="ServletSimple" />
+        <module name="Ajax" />
+        <module name="ServLetMybatisLoginRegister" />
+        <module name="Cookie" />
+        <module name="MybatisSimple" />
+        <module name="MybatisPractise" />
+        <module name="MybatisResultMap" />
+        <module name="BrandMVC" />
+        <module name="Jsp" />
+        <module name="CookieSessionAjaxFilterLoginRegister" />
+        <module name="Vue" />
+        <module name="Request" />
+        <module name="MybatisParameter" />
+        <module name="CookieSessionFilterAjaxLoginRegister" />
+        <module name="WebExam" />
+        <module name="Response" />
+        <module name="Filter" />
+        <module name="BrandAjaxJson" />
+        <module name="ElementUI" />
+        <module name="MybatisDynamicSQL" />
+        <module name="CookieSessionLoginRegister" />
+        <module name="Session" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Ajax" target="1.8" />
+      <module name="BrandAjaxJson" target="1.8" />
+      <module name="BrandMVC" target="1.8" />
+      <module name="BrandVueElement" target="1.8" />
+      <module name="Cookie" target="1.8" />
+      <module name="CookieSessionAjaxFilterLoginRegister" target="1.8" />
+      <module name="CookieSessionFilterAjaxLoginRegister" target="1.8" />
+      <module name="CookieSessionLoginRegister" target="1.8" />
+      <module name="ElementUI" target="1.8" />
+      <module name="Filter" target="1.8" />
       <module name="JavaMaven" target="1.8" />
       <module name="JavaMybatis" target="1.8" />
       <module name="JavaMybatis-Simple" target="1.8" />
       <module name="JavaMybits" target="1.8" />
       <module name="JavaTomcat" target="1.8" />
+      <module name="JSON" target="1.8" />
+      <module name="Jsp" target="1.8" />
+      <module name="JSPSimple" target="1.8" />
+      <module name="Listener" target="1.8" />
       <module name="MybatisDynamicSQL" target="1.8" />
       <module name="MybatisParameter" target="1.8" />
       <module name="MybatisPractise" target="1.8" />
@@ -36,7 +66,10 @@
       <module name="ServLetMybatisLoginRegister" target="1.8" />
       <module name="ServLetMybatisSimple" target="1.8" />
       <module name="ServletSimple" target="1.8" />
+      <module name="Session" target="1.8" />
       <module name="TomcatSimple" target="1.8" />
+      <module name="Vue" target="1.8" />
+      <module name="WebExam" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

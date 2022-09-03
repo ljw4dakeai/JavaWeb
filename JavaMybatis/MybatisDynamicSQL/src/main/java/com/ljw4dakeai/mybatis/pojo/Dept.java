@@ -6,7 +6,7 @@ import java.util.List;
  * @author ljw4dakeai
  * @description: 部门表
  * @title: Dept
- * @package com.ljw4dakeai.mybatis.pojo
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo
  * @date 2022/8/19 20:16
  */
 public class Dept {

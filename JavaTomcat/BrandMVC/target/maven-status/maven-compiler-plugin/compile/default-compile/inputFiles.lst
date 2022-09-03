@@ -1,0 +1,9 @@
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/pojo/Brand.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/controller/AddServlet.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/controller/DeleteByIdServlet.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/controller/SelectAllServlet.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/service/BrandService.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/mapper/BrandMapper.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/utils/SqlSessionUtils.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/controller/SelectByIdServlet.java
+/Users/ljw4dakeai/code/Java/JavaWeb/JavaTomcat/BrandMVC/src/main/java/com/ljw4dakeai/controller/UpdateServlet.java

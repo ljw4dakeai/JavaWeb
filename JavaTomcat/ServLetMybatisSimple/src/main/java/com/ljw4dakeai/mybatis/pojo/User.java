@@ -4,7 +4,7 @@ package com.ljw4dakeai.mybatis.pojo;
  * @author ljw4dakeai
  * @description: User实体类
  * @title: User
- * @package com.ljw4dakeai.mybatis.pojo
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo
  * @date 2022/8/24 19:41
  */
 public class User {

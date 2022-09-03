@@ -9,7 +9,7 @@ import java.util.List;
  * @author ljw4dakeai
  * @description: 菜品接口
  * @title: DishMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/23 20:07
  */
 public interface DishMapper {

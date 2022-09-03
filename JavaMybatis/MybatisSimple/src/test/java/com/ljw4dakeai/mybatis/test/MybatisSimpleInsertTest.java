@@ -33,7 +33,7 @@ public class MybatisSimpleInsertTest {
 
         //原始方法
         //nameSpace.sqlID
-        //sqlSession.insert("com.ljw4dakeai.mybatis.mapper.UserMapper.insertUser");
+        //sqlSession.insert("com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper.UserMapper.insertUser");
         //获取UserMapper代理实现类对象(代理模式, 找到映射文件中的sql语句,实现)
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         //调用接口中的方法,实现用户信息添加功能
@@ -64,8 +64,6 @@ public class MybatisSimpleInsertTest {
 
 
     @Test
-    @Before
-    @After
     public void testSelect(){
         SqlSession autoCommitSqlSession = SqlSessionUtils.getAutoCommitSqlSession();
         UserMapper mapper = autoCommitSqlSession.getMapper(UserMapper.class);

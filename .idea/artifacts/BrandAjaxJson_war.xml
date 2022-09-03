@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BrandAjaxJson:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/BrandAjaxJson/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>BrandAjaxJson</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="BrandAjaxJson-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="BrandAjaxJson:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -11,7 +11,7 @@ import java.util.List;
  * @author ljw4dakeai
  * @description: UserMapper接口
  * @title: UserMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/24 19:43
  */
 public interface UserMapper {

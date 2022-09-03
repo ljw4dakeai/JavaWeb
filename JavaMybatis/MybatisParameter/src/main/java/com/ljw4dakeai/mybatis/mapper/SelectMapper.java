@@ -11,7 +11,7 @@ import java.util.Map;
  * @author ljw4dakeai
  * @description: 查询的接口
  * @title: SelectMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/19 11:24
  */
 public interface SelectMapper {

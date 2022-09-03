@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
+<!DOCTYPE com.ljw4dakeai.mapper
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
- "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ "http://mybatis.org/dtd/mybatis-3-com.ljw4dakeai.mapper.dtd">
  
-<mapper namespace="com.ljw4dakeai.mybatis.mapper.DishMapper">
+<com.ljw4dakeai.mapper namespace="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.DishMapper">
 
     <!--    List<Dish> selectAll();-->
     <select id="selectAll" resultType="Dish">
         select *
-        from tb_dish
+        from mybatis.tb_dish
     </select>
 
     <!--Dish selectByDishId(@Param("id") Integer id);-->
     <select id="selectByDishId" resultType="Dish">
         select *
-        from tb_dish
+        from mybatis.tb_dish
         where id= #{id,jdbcType=INTEGER}
     </select>
 
     <!--        Integer updateByDishId(Dish dish);-->
     <update id="updateByDishId" parameterType="Dish">
-        update tb_dish
+        update mybatis.tb_dish
         set name =#{dish.name,jdbcType=VARCHAR}, price = #{dish.price,jdbcType=DOUBLE},
         code =#{dish.code,jdbcType=VARCHAR}, image =#{dish.image,jdbcType=VARCHAR},
         description = #{dish.description,jdbcType=VARCHAR}, status = #{dish.status,jdbcType=INTEGER}
@@ -71,4 +71,4 @@
         </where>
     </delete>
 
-</mapper>
+</com.ljw4dakeai.mapper>

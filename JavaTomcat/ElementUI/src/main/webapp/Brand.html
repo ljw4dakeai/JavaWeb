@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌列表页面</title>
+    <script src="js/vue.js"></script>
+    <script src="element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+
+<div id="BrandTable">
+    <!--    第一行 搜索表单-->
+    <div>
+        <el-form :inline="true" :model="brand" class="form-inline" >
+            <el-form-item label="启用状态">
+                <el-select v-model="brand.status" placeholder="启用状态">
+                    <el-option label="禁用" value="0"></el-option>
+                    <el-option label="启用" value="1"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item label="商品名称">
+                <el-input v-model="brand.brandName" placeholder="商品名称"></el-input>
+            </el-form-item>
+            <el-form-item label="公司名称">
+                <el-input v-model="brand.companyName" placeholder="公司名称"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="onSubmit">查询</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <!--    第二行 批量删除, 新增对话框-->
+    <el-row type="flex" justify="space-between">
+        <el-col :span="6">
+            <el-button type="danger" plain icon="el-icon-delete">批量删除</el-button>
+        </el-col>
+        <el-col :span ="1">
+            <el-button type="primary" @click="dialogVisible = true">新 增</el-button>
+        </el-col>
+    </el-row>
+
+    <el-dialog
+            title="添加商品"
+            :visible.sync="dialogVisible"
+            width="30%">
+        <!--    内嵌表单-->
+        <el-form ref="form" :model="formBrand" label-width="80px">
+            <el-form-item label="商品名称">
+                <el-input v-model="formBrand.brandName"></el-input>
+            </el-form-item>
+            <el-form-item label="企业名称">
+                <el-input v-model="formBrand.companyName"></el-input>
+            </el-form-item>
+            <el-form-item label="商品排序">
+                <el-input v-model="formBrand.ordered"></el-input>
+            </el-form-item>
+            <el-form-item label="商品描述">
+                <el-input type="textarea" v-model="formBrand.description"></el-input>
+            </el-form-item>
+            <el-form-item label="商品状态">
+                <el-switch v-model="formBrand.status" active-value="1" inactive-value="0"></el-switch>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="submitForm">立即添加</el-button>
+                <el-button @click="dialogVisible = false">取消</el-button>
+            </el-form-item>
+        </el-form>
+        <span slot="footer" class="dialog-footer"></span>
+    </el-dialog>
+
+    <template>
+        <el-table
+                ref="multipleTable"
+                :data="tableData"
+                tooltip-effect="dark"
+                style="width: 100%"
+                @selection-change="handleSelectionChange">
+            <el-table-column
+                    type="selection"
+                    width="55">
+            </el-table-column>
+            <el-table-column
+                    align="center"
+                    prop="id"
+                    label="商品id"
+                    width="120">
+            </el-table-column>
+            <el-table-column
+                    align="center"
+                    prop="brandName"
+                    label="商品名称"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    align="center"
+                    prop="companyName"
+                    label="公司名称"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    align="center"
+                    prop="ordered"
+                    label="商品排序"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    align="center"
+                    prop="status"
+                    label="商品状态"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column label="操作"  align = "right">
+                <template slot-scope="scope">
+                    <el-button
+                            type = "primary"
+                            @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                    <el-button
+                            type="danger"
+                            @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+    </template>
+
+    <el-pagination
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+            :current-page="currentPage"
+            :page-sizes="[10, 20, 30, 40]"
+            :page-size="10"
+            layout="total, sizes, prev, pager, next, jumper"
+            :total="40">
+    </el-pagination>
+
+
+</div>
+
+<script>
+    new Vue({
+        el: "#BrandTable",
+        data() {
+            return {
+                brand: {
+                    status: '',
+                    brandName: '',
+                    companyName: ''
+                },
+                dialogVisible: false,
+                formBrand: {
+                    brandName: '',
+                    companyName: '',
+                    ordered: '',
+                    description: '',
+                    status: ''
+                },
+                tableData: [
+                    {
+                        id : 1,
+                        brandName:"华为",
+                        companyName : "华为科技有限公司",
+                        ordered : 1,
+                        status :"启用"
+                    }
+                ],
+                multipleSelection: [],
+                currentPage: 4
+            }
+        },
+        methods: {
+            onSubmit() {
+                console.log(this.brand);
+            },
+            submitForm() {
+                console.log(this.formBrand);
+            },
+            handleSelectionChange(val) {
+                this.multipleSelection = val;
+                console.log(this.multipleSelection)
+            },
+            handleEdit(index, row) {
+                console.log(index, row);
+            },
+            handleDelete(index, row) {
+                console.log(index, row);
+            },
+            handleSizeChange(val) {
+                console.log(`每页 ${val} 条`);
+            },
+            handleCurrentChange(val) {
+                console.log(`当前页: ${val}`);
+            }
+
+        }
+    })
+</script>
+</body>
+</html>

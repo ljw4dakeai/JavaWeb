@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link href="css/login.css" rel="stylesheet">
+    <script src="js/vue.js"></script>
+    <script src="js/axios-0.18.0.js"></script>
+    <script src="element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+<div id="loginDiv">
+    <el-form :model="loginForm" ref="loginForm" label-width="100px" id="form">
+        <h1 id="loginMsg">LOGIN IN</h1>
+        <font color="red">
+            <h4 id="errorMsg" >{{errorMsg}}</h4>
+        </font>
+        <!-- 账号 -->
+        <el-form-item label="账号: " prop="username" autocomplete="on">
+            <el-input id="username" v-model="loginForm.username" placeholder="请输入用户名"></el-input>
+        </el-form-item>
+        <!-- 密码 -->
+        <el-form-item label="密码 : " prop="password">
+            <el-input id="password" type="password" v-model="loginForm.password" placeholder="请输入密码"></el-input>
+        </el-form-item>
+        <!--        <div class="subDiv">
+                    &lt;!&ndash; 找回密码 &ndash;&gt;
+                    <el-button :offset="6" type="primary" @click="submitForm()" class="button">login</el-button>
+                    <el-button type="primary" @click="resetForm()" class="button" >reset</el-button>
+                    <el-button type="text" @click="open()" class="button">注册用户</el-button>
+                </div>-->
+        <el-row :gutter="20" class="subDiv">
+            <el-col :span="5" :offset="4">
+                <el-button type="primary" @click="submitForm()" class="button">login</el-button>
+            </el-col>
+            <el-col :span="5" :offset="5">
+                <el-button type="primary" @click="resetForm('loginForm')" class="button">reset</el-button>
+            </el-col>
+            <el-col :span="3" :offset="1">
+                <el-button type="text" @click="open()" class="button">注册用户</el-button>
+            </el-col>
+        </el-row>
+
+
+        <!-- 登录 -->
+    </el-form>
+</div>
+<script>
+    new Vue({
+        el: "#loginDiv",
+        data() {
+            return {
+                loginForm: {
+                    username: "",
+                    password: "",
+                },
+                errorMsg: ""
+            };
+        },
+        methods: {
+            submitForm() {
+               axios.post('loginServlet', this.loginForm).then(resp => {
+                    this.errorMsg = resp.data
+                   console.log(this.errorMsg)
+                })
+            },
+            resetForm(loginForm) {
+                this.$refs[loginForm].resetFields()
+            },
+            open() {
+                location.href = "register.html"
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

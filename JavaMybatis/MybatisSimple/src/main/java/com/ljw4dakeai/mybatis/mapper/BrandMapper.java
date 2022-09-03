@@ -11,7 +11,7 @@ import java.util.List;
  * @author ljw4dakeai
  * @description: Brand查询接口
  * @title: BrandMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/19 15:36
  */
 public interface BrandMapper {

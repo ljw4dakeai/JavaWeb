@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
  * @author ljw4dakeai
  * @description: Dept表查询
  * @title: DeptMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/20 16:22
  */
 public interface DeptMapper {

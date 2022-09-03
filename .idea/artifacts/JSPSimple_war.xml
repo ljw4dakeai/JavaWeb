@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JSPSimple:war">
+    <output-path>$PROJECT_DIR$/JavaJSP/JSPSimple/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>JSPSimple</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="JSPSimple-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="JSPSimple:war exploded" />
+    </root>
+  </artifact>
+</component>

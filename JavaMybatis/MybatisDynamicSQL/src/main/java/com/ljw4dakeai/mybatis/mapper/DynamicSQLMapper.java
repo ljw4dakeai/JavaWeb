@@ -9,7 +9,7 @@ import java.util.List;
  * @author ljw4dakeai
  * @description: 动态SQL接口文件
  * @title: DynamicSQLMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/22 21:48
  */
 public interface DynamicSQLMapper {

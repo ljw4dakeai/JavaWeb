@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json</title>
+</head>
+<body>
+<script>
+    let userInfo = {
+        username:"张益达",
+        age:20,
+        address:["上海", "北京", "广州"]
+    };
+
+    console.log(userInfo);
+
+
+    //json 转化为字符串
+    let data = JSON.stringify(userInfo);
+    console.log(data);
+
+
+    //字符串转化为json
+    let parseJson = axios.parse(data);
+    console.log(parseJson);
+
+</script>
+<script src="js/axios-0.18.0.js"></script>
+</body>
+</html>

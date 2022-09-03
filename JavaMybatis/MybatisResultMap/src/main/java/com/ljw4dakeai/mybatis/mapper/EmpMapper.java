@@ -9,7 +9,7 @@ import java.util.List;
  * @author ljw4dakeai
  * @description: 员工映射接口
  * @title: EmpMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/19 21:15
  */
 public interface EmpMapper {

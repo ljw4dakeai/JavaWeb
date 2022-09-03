@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
+<!DOCTYPE com.ljw4dakeai.mapper
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
- "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- 
-<mapper namespace="com.ljw4dakeai.mybatis.mapper.DeptMapper">
+ "http://mybatis.org/dtd/mybatis-3-com.ljw4dakeai.mapper.dtd">
+
+<com.ljw4dakeai.mapper namespace="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.DeptMapper">
 
 <!--使用resultMap处理一对多的映射关系-->
     <!--1.collection-->
@@ -23,7 +23,7 @@
 
     <!--Dept selectEmpDeptByStepTwo(@Param("deptId") Integer deptId);-->
     <select id="selectEmpDeptByStepTwo" resultType="Dept">
-        select * from tb_dept
+        select * from mybatis.tb_dept
         where dept_id = #{deptId,jdbcType=INTEGER}
     </select>
 
@@ -52,7 +52,7 @@
         <id column="dept_id" property="deptId"/>
         <result column="dept_name" property="deptName"/>
         <collection property="employees"
-                     select="com.ljw4dakeai.mybatis.mapper.EmpMapper.selectDeptEmpByStepTwo"
+                     select="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper.EmpMapper.selectDeptEmpByStepTwo"
                      column="dept_id">
         </collection>
     </resultMap>
@@ -64,4 +64,4 @@
         where dept_id = #{deptId,jdbcType=INTEGER}
     </select>
 
-</mapper>
+</com.ljw4dakeai.mapper>

@@ -89,7 +89,7 @@
             <result column="age" property="age"/>
             <result column="gender" property="gender"/>
             <association property="dept"
-                            select="com.ljw4dakeai.mybatis.mapper.DeptMapper.selectEmpDeptByStepTwo"
+                            select="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.DeptMapper.selectEmpDeptByStepTwo"
                             column="dept_id">
             </association>
         </resultMap>
@@ -153,7 +153,7 @@
             设置fetchType="eager"开启当前分布查询立即加载
         -->
         <association property="dept" fetchType="eager"
-                        select="com.ljw4dakeai.mybatis.mapper.DeptMapper.selectEmpDeptByStepTwo"
+                        select="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.DeptMapper.selectEmpDeptByStepTwo"
                         column="dept_id">
         </association>
     </resultMap>

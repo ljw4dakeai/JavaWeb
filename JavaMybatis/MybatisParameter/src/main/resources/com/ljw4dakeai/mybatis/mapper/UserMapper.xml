@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
+<!DOCTYPE com.ljw4dakeai.mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        "http://mybatis.org/dtd/mybatis-3-com.ljw4dakeai.mapper.dtd">
 
-<mapper namespace="com.ljw4dakeai.mybatis.mapper.UserMapper">
+<com.ljw4dakeai.mapper namespace="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.UserMapper">
     <!--  User getUserByUserName(String username);    -->
     <select id="getUserByUserName" resultType="User">
         select * from tb_user
@@ -39,4 +39,4 @@
         where username = #{username,jdbcType=VARCHAR} and password = #{password,jdbcType=VARCHAR}
     </select>
 
-</mapper>
+</com.ljw4dakeai.mapper>

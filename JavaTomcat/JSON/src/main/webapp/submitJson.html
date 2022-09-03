@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/axios-0.18.0.js"></script>
+</head>
+<body>
+<button type="button" onclick="loadDoc()">发送服务器json(展示在服务器控制台)</button>
+<script>
+    let user = {
+        id: 1,
+        username: "ljw4dakeai",
+        password: "10086",
+        address: ["襄阳", "武汉", "湖北"]
+    }
+
+    function loadDoc() {
+        //lambda简单写法
+        axios.post("JacksonServlet", user).then(resp =>{})
+    }
+</script>
+</body>
+</html>

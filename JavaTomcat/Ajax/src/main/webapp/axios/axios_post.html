@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>axios_post</title>
+    <script src="../js/axios-0.18.0.js"></script>
+</head>
+<body>
+<button type="button" onclick="loadDoc()">发起 Ajax 异步post请求</button>
+<script>
+
+    function loadDoc() {
+        // axios({
+        //     method: "post",
+        //     url: "/Ajax/ajaxServlet",
+        //     data:"username=ljw4dakeai"
+        // }).then(function (resp) {
+        //     alert(resp.data)
+        // })
+
+        //简化写法
+        axios.post("/Ajax/ajaxServlet", "username=ljw4dakeai").then(function (resp) {
+            alert(resp.data)
+        })
+    }
+
+
+
+</script>
+</body>
+</html>

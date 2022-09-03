@@ -15,6 +15,9 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/JavaTomcat" />
+    <file type="web" url="file://$PROJECT_DIR$/JavaTomcat/Jsp" />
+    <file type="web" url="file://$PROJECT_DIR$/JavaTomcat/Jsp/JSPSimple" />
+    <file type="web" url="file://$PROJECT_DIR$/WebExam" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -30,7 +33,14 @@
         <option value="$PROJECT_DIR$/JavaMybatis/MybatisResultMap/pom.xml" />
         <option value="$PROJECT_DIR$/JavaTomcat/pom.xml" />
         <option value="$PROJECT_DIR$/JavaTomcat/ServLetMybatisLoginRegest/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaJSP/pom.xml" />
+        <option value="$PROJECT_DIR$/WebExam/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/JavaJSP/JSPSimple/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

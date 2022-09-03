@@ -1,0 +1,4 @@
+com/ljw4dakeai/service/impl/BrandServiceImpl.class
+com/ljw4dakeai/controller/SelectBrandByPageServlet.class
+com/ljw4dakeai/controller/AddBrandServlet.class
+com/ljw4dakeai/controller/DeleteByIdsServlet.class

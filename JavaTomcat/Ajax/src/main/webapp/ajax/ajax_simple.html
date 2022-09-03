@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax_simple</title>
+</head>
+<body>
+<button type="button" id="btn">发起 普通Ajax 请求</button>
+
+<script>
+    document.getElementById("btn").onclick = ajaxRequest;
+
+    function ajaxRequest() {
+        var xhr = new XMLHttpRequest()
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                alert(this.responseText)
+            }
+        }
+        xhr.open("GET", "/Ajax/ajaxServlet?username=ljw4dakeai", true);
+        xhr.send();
+    }
+</script>
+</body>
+</html>

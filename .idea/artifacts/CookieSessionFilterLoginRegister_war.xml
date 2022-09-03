@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CookieSessionFilterLoginRegister:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/CookieSessionFilterLoginRegister/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CookieSessionFilterLoginRegister</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CookieSessionFilterAjaxLoginRegister-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CookieSessionFilterLoginRegister:war exploded" />
+    </root>
+  </artifact>
+</component>

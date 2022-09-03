@@ -3,7 +3,7 @@ package com.ljw4dakeai.mybatis.pojo;
 /**
  * @description: 菜品类
  * @title: Dish
- * @package com.ljw4dakeai.mybatis.pojo
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo
  * @date  2022-08-23 20:00:00
  *@author  ljw4dakeai
  */

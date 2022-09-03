@@ -4,7 +4,7 @@ package com.ljw4dakeai.mybatis.pojo;
  * @author ljw4dakeai
  * @description: 员工表
  * @title: Employee
- * @package com.ljw4dakeai.mybatis.pojo
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo
  * @date 2022/8/19 20:16
  */
 public class Employee {

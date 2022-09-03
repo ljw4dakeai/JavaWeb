@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>axios_get</title>
+    <script src="js/axios-0.18.0.js"></script>
+</head>
+<body>
+<button type="button" onclick="loadDoc()">服务器返回json数据(解析在浏览器控制台)</button>
+<script>
+    function loadDoc() {
+        //lambda简单写法
+        axios.get("JacksonServlet").then(resp => {
+            let user = resp.data;
+            console.log(user, typeof user);
+            console.log(user.username, user.address)
+        })
+    }
+
+</script>
+</body>
+</html>

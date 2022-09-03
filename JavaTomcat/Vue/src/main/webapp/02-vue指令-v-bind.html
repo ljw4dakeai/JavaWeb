@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-vue指令-v-bind</title>
+</head>
+<body>
+
+    <div id="app">
+        <!--3 把模型数据绑定到视图上-->
+        <!--v-bind:给html标签属性绑定模型数据
+            语法：v-bind:href = "url"
+                
+            简写：:href = "url"
+                
+        -->
+        <a v-bind:href="url">点击跳转到网页</a><br>
+        <!--简写：-->
+        <a :href="url">点击跳转到网页</a><br>
+    </div>
+
+<!--1 引入vue.js-->
+<script src="js/vue.js"></script>
+<!--2 创建vue对象，定义模型数据-->
+<script>
+    new Vue({
+        el:"#app",//接管的区域
+        data:{
+            //定义模型数据url
+            url : "https://www.baidu.com"
+            
+        }
+    });
+</script>
+</body>
+</html>

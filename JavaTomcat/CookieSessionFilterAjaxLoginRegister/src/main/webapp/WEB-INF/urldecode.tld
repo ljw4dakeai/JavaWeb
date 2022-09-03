@@ -1,0 +1,23 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <!-- 标签库的描述 -->
+    <description>cookie decode</description>
+
+    <!-- 标签库的版本号 -->
+    <tlib-version>1.0</tlib-version>
+
+    <!-- taglib指令中prefix需要制定的部分，可以任意写，但是尽可能和文件名保持一致，方便管理。 -->
+    <short-name>func</short-name>
+
+    <!-- taglib指令中URI需要指定的部分，可以任意写 -->
+    <uri>https://tomcat.apache.org/cookie_decode_func</uri>
+    <function>
+        <name>cookieDecode</name>
+        <function-class>com.ljw4dakeai.com.ljw4dakeai.utils.CookieDecodeUtils</function-class>
+        <function-signature>java.lang.String decode(java.lang.String )</function-signature>
+    </function>
+
+</taglib>

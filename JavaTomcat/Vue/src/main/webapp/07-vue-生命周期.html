@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-vue-生命周期</title>
+</head>
+<body>
+    <div id="app">
+        <!--3 将模型数据绑定到视图中-->
+        <!--{{表达式}}：插值表达式-->
+        <p>{{message}}</p>
+        <input v-model="message">
+    </div>
+<!--1 引入vue.js文件-->
+<script src="js/vue.js"></script>
+
+<!--2 创建vue对象，定义模型数据-->
+<script>
+    new Vue({
+        el:"#app",  //表示vue接管的区域，只有在这个区域内才可以使用表达式获取模型数据
+        data:{  //data中定义模型数据
+            //每一个变量都是一个模型数据，将来html标签中要使用
+            message:"hello vue!"
+        },
+        methods:{
+            //自定义方法写在这...,生命周期方法不能定义在此处，在methods外面直接定义.
+        }
+        //需求：定义生命周期方式：beforeCreate、created、mounted、updated方法，查看执行先后顺序
+    });
+</script>
+</body>
+</html>

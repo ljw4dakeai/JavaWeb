@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BarndMAC:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/BarndMAC/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>BarndMAC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="BarndMAC-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="BarndMAC:war exploded" />
+    </root>
+  </artifact>
+</component>

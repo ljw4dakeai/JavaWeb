@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
+<!DOCTYPE com.ljw4dakeai.mapper
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
- "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ "http://mybatis.org/dtd/mybatis-3-com.ljw4dakeai.mapper.dtd">
  
-<mapper namespace="com.ljw4dakeai.mybatis.mapper.BrandMapper">
+<com.ljw4dakeai.mapper namespace="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.BrandMapper">
 
 <!--自定义sql实现-->
 <!--    <sql id="brand_col">-->
@@ -137,4 +137,4 @@
         where id in (${ids})
     </delete>
 
-</mapper>
+</com.ljw4dakeai.mapper>

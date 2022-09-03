@@ -4,7 +4,7 @@ package com.ljw4dakeai.mybatis.pojo;
  * @author ljw4dakeai
  * @description: 实体类Brand
  * @title: Brand
- * @package com.ljw4dakeai.mybatis.pojo
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo
  * @date 2022/8/19 15:49
  */
 public class Brand {

@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:18:15 +0800] "GET /Filter HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:18:15 +0800] "GET /Filter/ HTTP/1.1" 200 570 http-bio-8080-exec-3 18
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:18:15 +0800] "GET /Filter/imgs/IMG_0225.png HTTP/1.1" 200 186850 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:18:16 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:18:26 +0800] "GET /Filter/index.html HTTP/1.1" 200 570 http-bio-8080-exec-6 1
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:22:23 +0800] "GET /Filter HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:22:23 +0800] "GET /Filter/ HTTP/1.1" 200 524 http-bio-8080-exec-3 23
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:22:26 +0800] "GET /Filter/simpleFilter.jsp HTTP/1.1" 200 241 http-bio-8080-exec-4 712
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:23:04 +0800] "GET /Filter HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:23:04 +0800] "GET /Filter/ HTTP/1.1" 304 - http-bio-8080-exec-3 11
+0:0:0:0:0:0:0:1 - - [29/Aug/2022:09:23:06 +0800] "GET /Filter/simpleFilter.jsp HTTP/1.1" 200 241 http-bio-8080-exec-4 28

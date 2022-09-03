@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JSON:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/JSON/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>JSON</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="JSON-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="JSON:war exploded" />
+    </root>
+  </artifact>
+</component>

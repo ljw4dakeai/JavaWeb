@@ -23,7 +23,7 @@
 
     <!-- 别名 -->
     <typeAliases>
-        <package name="com.ljw4dakeai.mybatis.pojo"/>
+        <package name="com.ljw4dakeai.mybatis.com.ljw4dakeai.pojo"/>
     </typeAliases>
 
     <environments default="development">
@@ -41,7 +41,7 @@
 
     <!--映射文件-->
     <mappers>
-        <package name="com.ljw4dakeai.mybatis.mapper"/>
+        <package name="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper"/>
     </mappers>
 
 </configuration>

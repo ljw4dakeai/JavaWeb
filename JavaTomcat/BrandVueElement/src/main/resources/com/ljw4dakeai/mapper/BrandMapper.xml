@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ljw4dakeai.mapper.BrandMapper">
+    <!--    List<Brand> selectAllBrand(Brand brand);-->
+    <select id="selectAllBrand" resultType="Brand">
+        select *
+        from tb_brand
+        <where>
+            <if test="status != null">
+                status = #{status}
+            </if>
+            <if test="brandName != null and brandName != ''">
+                and brand_name like concat('%', #{brandName}, '%')
+            </if>
+            <if test="companyName != null and companyName != ''">
+                and company_name like concat('%', #{companyName}, '%')
+            </if>
+        </where>
+    </select>
+
+    <!--    Integer deleteByIds(@Param("ids") int[] ints);-->
+    <delete id="deleteByIds">
+        delete
+        from tb_brand
+        where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

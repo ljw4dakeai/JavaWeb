@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ElementUI:war">
+    <output-path>$PROJECT_DIR$/JavaTomcat/ElementUI/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ElementUI</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ElementUI-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ElementUI:war exploded" />
+    </root>
+  </artifact>
+</component>

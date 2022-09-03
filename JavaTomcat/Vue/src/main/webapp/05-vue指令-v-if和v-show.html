@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-vue指令-v-if和v-show</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- 需求1：模型数据count=1展示div1,count=2展示div2,count=3展示div3,否则展示div4？ -->
+            <div v-if="count === 1">div1</div>
+            <div v-else-if="count === 2">div2</div>
+            <div v-else-if="count === 3">div3</div>
+            <div v-else>div4</div>
+
+            <!--需求2：如果count>=0就展示div-show，否则隐藏div-show-->
+            <div>div-show</div>
+
+            <!--使用输入框双向绑定count，并通过输入框修改count值。-->
+            <input v-model="count">
+    </div>
+
+
+<!--1 引入vue.js文件-->
+<script src="js/vue.js"></script>
+
+<!--2 创建vue对象，定义模型数据-->
+<script>
+    new Vue({
+        el:"#app",  //表示vue接管的区域，只有在这个区域内才可以使用表达式获取模型数据
+        //方式1：
+        data:{  //data中定义模型数据
+            count:1
+        }
+    });
+</script>
+</body>
+</html>

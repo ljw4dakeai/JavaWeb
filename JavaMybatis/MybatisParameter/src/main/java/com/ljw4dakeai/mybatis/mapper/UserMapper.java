@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @description: tb_user映射接口
  * @title: UserMapper
- * @package com.ljw4dakeai.mybatis.mapper
+ * @package com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper
  * @date 2022/8/19 8:46
  * 1. 若mapper接口中的方法为单个自变量类型
  * 此时可以通过#{} ${}以仍和内容获取参数值
