@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE com.ljw4dakeai.mapper
+<!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-com.ljw4dakeai.mapper.dtd">
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--        命名空间和全类名一致, id 和方法名一致-->
-<com.ljw4dakeai.mapper namespace="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.UserMapper">
+<mapper namespace="com.ljw4dakeai.mybatis.mapper.UserMapper">
     <insert id="insertUser">
         insert into mybatis.tb_user
         values (NULL, 'admin', 520000, '男', '武汉')
@@ -31,4 +31,4 @@
         select *
         from mybatis.tb_user
     </select>
-</com.ljw4dakeai.mapper>
+</mapper>

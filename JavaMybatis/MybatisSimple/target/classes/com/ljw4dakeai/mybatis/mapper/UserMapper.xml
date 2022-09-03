@@ -25,7 +25,7 @@
     <!--
         类型别名
           <select id="selectUser" resultType="User">
-          <select id="selectUser" resultType="com.ljw4dakeai.mybatis.com.ljw4dakeai.pojo.User">
+          <select id="selectUser" resultType="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo.User">
     -->
     <select id="selectUser" resultType="User">
         select *

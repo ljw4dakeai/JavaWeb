@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE com.ljw4dakeai.mapper
+<!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-com.ljw4dakeai.mapper.dtd">
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<com.ljw4dakeai.mapper namespace="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.EmpMapper">
+<mapper namespace="com.ljw4dakeai.mybatis.mapper.EmpMapper">
 <!--处理字段名和对应实体类字段名不一致问题-->
     <!--自定义sql实现-->
     <!--
@@ -89,7 +89,7 @@
             <result column="age" property="age"/>
             <result column="gender" property="gender"/>
             <association property="dept"
-                            select="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper.DeptMapper.selectEmpDeptByStepTwo"
+                            select="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.DeptMapper.selectEmpDeptByStepTwo"
                             column="dept_id">
             </association>
         </resultMap>
@@ -153,7 +153,7 @@
             设置fetchType="eager"开启当前分布查询立即加载
         -->
         <association property="dept" fetchType="eager"
-                        select="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper.DeptMapper.selectEmpDeptByStepTwo"
+                        select="com.ljw4dakeai.mybatis.com.ljw4dakeai.mapper.DeptMapper.selectEmpDeptByStepTwo"
                         column="dept_id">
         </association>
     </resultMap>
@@ -168,4 +168,4 @@
         where dept_id = #{deptId,jdbcType=INTEGER}
     </select>
 
-</com.ljw4dakeai.mapper>
+</mapper>

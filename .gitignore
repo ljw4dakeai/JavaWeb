@@ -1,2 +1,14 @@
-# Project exclude paths
-/out/
+.git
+logs
+rebel.xml
+target/
+!.mvn/wrapper/maven-wrapper.jar
+log.path_IS_UNDEFINED
+.DS_Store
+offline_user.md
+*.class
+
+.idea
+*.iws
+*.iml
+*.ipr

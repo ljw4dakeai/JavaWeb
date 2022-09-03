@@ -34,7 +34,7 @@
                     <typeAlias type="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo.User"/> -> 一个一个类的添加
                     <package name="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo"/> -> 一个包中所有的都使用类型别名(所有类都使用默认别名)
         -->
-        <package name="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.pojo"/>
+        <package name="com.ljw4dakeai.mybatis.pojo"/>
     </typeAliases>
 
 
@@ -90,7 +90,7 @@
                 1.mapper接口和映射文件所在的包必须一致
                 2.mapper接口的名字, 和映射文件的名字必须一致
         -->
-        <package name="com.ljw4dakeai.mybatis.com.ljw4dakeai.com.ljw4dakeai.mapper"/>
+        <package name="com.ljw4dakeai.mybatis.mapper"/>
     </mappers>
 
 
